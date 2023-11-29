@@ -9,7 +9,9 @@ I would like to demonstrate the structure of the repository
 		---- components // Folder where would be js files which would be supposed to create Components
 		|
 		|
-		---- config // Here would be everything related to project configuration
+		---- package.json          //
+		---- package.lock.json     // THESE ARE CONFIG FILES
+		---- webpack.config.js	   //
 		|
 		|
 		---- src // Here are supposed to be folders for each piece of project
