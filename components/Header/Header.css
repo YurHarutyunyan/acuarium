@@ -1,0 +1,93 @@
+
+.navbar,.navbar-nav {
+    display:flex;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1rem;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 6px 0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    opacity: .9;
+  }
+
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    transform: translateX(-50px);
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    box-shadow: rgb(12 12 12 / 6%) 0px 1px 20px 0px;
+  }
+
+  .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    display: block;
+    border-right: none;
+    border-bottom: none;
+    transform: translateX(-50%) rotateZ(45deg);
+    position: absolute;
+    top: -7px;
+    left: 49%;
+    z-index: 1001;
+  }
+  header {
+    background-color: transparent;
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 90px;
+    display: grid;
+    align-items: center;
+  }
+  header.nav-fixed {
+    padding: 0px;
+    border-bottom: none;
+    z-index: 9 !important;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+    height: 70px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    display: inline-block;
+    padding: 2px 10px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    transform: translateX(0px);
+    border: 1px solid var(--border-color-light);
+  }
+
+  .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+    border: 1px solid var(--border-color-light);
+    border-right: none;
+    border-bottom: none;
+  }
+  .navbar .navbar-brand {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Cinzel', serif;
+  }
