@@ -14,8 +14,9 @@ module.exports = {
     main: path.resolve(__dirname, "app.js"),
   },
   output: {
-    filename: "minified.js",
-    path: path.resolve(__dirname, "~/dev/Acuarium/acuarium/dist"),
+    filename: "[name].js",
+    path: path.resolve(__dirname, "dist"),
+    assetModuleFilename: "static/[name][ext]",
   },
   plugins: [
     new HTMLWebpackPlugin({
@@ -26,9 +27,16 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(png|jpe?g|gif)$/i,
+        type: "asset/resource",
+      },
+      {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
     ],
+  },
+  resolve: {
+    modules: ["node_modules"],
   },
 };
