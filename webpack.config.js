@@ -16,6 +16,7 @@ module.exports = {
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
+    assetModuleFilename: "static/[name][ext]",
   },
   plugins: [
     new HTMLWebpackPlugin({
@@ -25,6 +26,10 @@ module.exports = {
   ],
   module: {
     rules: [
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        type: "asset/resource",
+      },
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
