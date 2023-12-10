@@ -101,6 +101,11 @@ export function HeaderComponent() {
 
   const modeContainer = document.createElement("div");
   modeContainer.classList.add("mode-container");
+  modeContainer.addEventListener('click',()=>{
+    document.getElementsByClassName("slideshow").style.color=()=>{
+      return "#473b43"
+    }
+  })
 
   const sunIcon = document.createElement("i");
   sunIcon.classList.add("gg-sun");

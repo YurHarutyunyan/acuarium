@@ -1,3 +1,3 @@
-function createId(tagName,  id){
+export function createId(tagName,  id){
     tagName.id = id
 }

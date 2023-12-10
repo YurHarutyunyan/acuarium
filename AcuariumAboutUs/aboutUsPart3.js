@@ -1,3 +1,4 @@
+import {rootId} from "./AboutUsPart1"
 let section3 = createElement("section");
 createId(section3,"section3_container");
 

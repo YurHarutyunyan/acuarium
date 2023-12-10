@@ -1,4 +1,7 @@
-function memberCard(parent,name,containerId,className, imageUrl, gitUrl){
+import {createElement} from "./aboutUsCreateElement"
+import {createId} from "./aboutUsCreateId"
+import { createInnerHtml } from "./aboutUsCreateInnerHtml";
+export function memberCard(parent,name,containerId,className, imageUrl, gitUrl){
      
     const container = createElement("div");
     createId(container, containerId);
@@ -9,6 +12,8 @@ function memberCard(parent,name,containerId,className, imageUrl, gitUrl){
         const imageElement = createElement("img");
         createId(imageElement, containerId + "_Image");
         imageElement.src = imageUrl;
+        console.log(imageElement.src)
+
         container.append(imageElement);
         imageElement.className = "imageCardFormat"
       }
