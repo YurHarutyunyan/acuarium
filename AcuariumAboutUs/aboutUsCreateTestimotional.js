@@ -1,4 +1,7 @@
-function createTestimotional(parent, containerId, author, commentText, imageUrl) {
+ import {createElement} from "./aboutUsCreateElement"
+ import {createId} from "./aboutUsCreateId"
+ import {createInnerHtml} from "./aboutUsCreateInnerHtml"
+ export function createTestimotional(parent, containerId, author, commentText, imageUrl) {
     //first part of testimotional, which contains the comment
     const container = createElement("div");
     createId(container, containerId);

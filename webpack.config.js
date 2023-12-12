@@ -10,13 +10,10 @@ module.exports = {
     open: true,
     historyApiFallback: true,
   },
-  entry: {
-    main: path.resolve(__dirname, "app.js"),
-  },
+  entry: "./app.js",
   output: {
-    filename: "[name].js",
+    filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    assetModuleFilename: "static/[name][ext]",
   },
   plugins: [
     new HTMLWebpackPlugin({
@@ -30,6 +27,13 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i, 
+        loader: 'file-loader',
+        options: {
+          name: '/public/icons/[name].[ext]'
+        }
+    },
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],

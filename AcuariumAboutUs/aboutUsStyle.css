@@ -19,12 +19,15 @@
 }
 
 #section1Div2{
+    text-align: center;
     position: relative;
+    margin: 0 auto;
+
     padding-left: 0px;
     padding-right: 60px;
     text-align: top;
     height:200px;
-    width: 300px; 
+    width: 500px; 
     color: rgb(61, 41, 5);
 }
 

@@ -1,3 +1,3 @@
-function createInnerHtml(tagName, inner){
+export function createInnerHtml(tagName, inner){
     tagName.innerHTML += inner
 }
