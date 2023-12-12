@@ -1,8 +1,8 @@
-import icon1 from "../../static/images/icon1.png";
-import icon2 from "../../static/images/icon2.png";
-import icon3 from "../../static/images/icon3.png";
-import icon4 from "../../static/images/icon4.png";
-import bg1 from "../../static/images/bg1.jpg";
+import icon1 from "../../public/static/images/icon1.png";
+import icon2 from "../../public/static/images/icon2.png";
+import icon3 from "../../public/static/images/icon3.png";
+import icon4 from "../../public/static/images/icon4.png";
+import bg1 from "../../public/static/images/bg1.jpg";
 
 export function FeatureComponent() {
   const section = document.createElement("section");

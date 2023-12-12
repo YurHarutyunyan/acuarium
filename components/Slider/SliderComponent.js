@@ -1,6 +1,6 @@
-import bg1 from "../../static/images/bg1.jpg";
-import bg2 from "../../static/images/bg2.jpg";
-import bg3 from "../../static/images/bg3.jpg";
+import bg1 from "../../public/static/images/bg1.jpg";
+import bg2 from "../../public/static/images/bg2.jpg";
+import bg3 from "../../public/static/images/bg3.jpg";
 import { Sliderlogic } from "./sliderlogic.js";
 
 export function SliderComponent() {

@@ -1,5 +1,5 @@
-import about1Image from "../../static/images/about1.jpg";
-import about2Image from "../../static/images/about2.jpg";
+import about1Image from "../../public/static/images/about1.jpg";
+import about2Image from "../../public/static/images/about2.jpg";
 
 export function SliderBottomComponent() {
   const aboutDiv = document.createElement("section");
