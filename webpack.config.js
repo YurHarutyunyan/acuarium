@@ -24,14 +24,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        type: "asset/resource",
-      },
-      {
         test: /\.(jpe?g|png|gif|svg)$/i, 
         loader: 'file-loader',
         options: {
-          name: '/public/icons/[name].[ext]'
+          name: '/public/static/images/[name].[ext]'
         }
     },
       {

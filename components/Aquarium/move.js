@@ -1,4 +1,5 @@
-function runNemo() {
+
+export function runNemo() {
     const image = document.getElementById('nemo');
     const imageWidth = image.width;
     const imageHeight = image.height;

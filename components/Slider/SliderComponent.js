@@ -59,7 +59,7 @@ export function SliderComponent() {
 
     section.appendChild(heroHeaderDiv);
     heroHeaderDiv.appendChild(wrapperDiv);
-    wrapperDiv.appendChild(slideshowSection);
+    //wrapperDiv.appendChild(slideshowSection);
     slideshowSection.appendChild(slideDiv);
     slideDiv.appendChild(backgroundDiv);
     backgroundDiv.appendChild(imageDiv);

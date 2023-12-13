@@ -2,6 +2,7 @@ import about1Image from "../../public/static/images/about1.jpg";
 import about2Image from "../../public/static/images/about2.jpg";
 
 export function SliderBottomComponent() {
+
   const aboutDiv = document.createElement("section");
   aboutDiv.classList.add("w3l-aboutblock", "py-5");
 
@@ -19,10 +20,10 @@ export function SliderBottomComponent() {
     "mb-md-5",
     "mb-4"
   );
-
+ 
   const img1 = document.createElement("img");
   img1.classList.add("img-fluid", "img-responsive");
-  img1.src = about1Image;
+  img1.src = "../static/images/about1.jpg";
   img1.alt = " ";
 
   leftImgDiv.appendChild(img1);
@@ -83,7 +84,7 @@ export function SliderBottomComponent() {
 
   const img2 = document.createElement("img");
   img2.classList.add("img-fluid", "img-responsive");
-  img2.src = about2Image;
+  img2.src = "../static/images/about2.jpg";
   img2.alt = " ";
 
   leftImg2Div.appendChild(img2);
