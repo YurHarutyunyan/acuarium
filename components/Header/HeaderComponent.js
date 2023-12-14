@@ -37,7 +37,7 @@ export function HeaderComponent() {
   const ul = document.createElement("ul");
   ul.classList.add("navbar-nav", "ml-lg-auto");
 
-  const navItems = ["Home", "About Us", "Services", "Contact Us"];
+  const navItems = ["Home", "AboutUs", "Services", "Contact_Us"];
 
   navItems.forEach((item) => {
     const li = document.createElement("li");
@@ -45,7 +45,7 @@ export function HeaderComponent() {
 
     const link = document.createElement("a");
     link.classList.add("nav-link");
-    link.href = item.toLowerCase() + ".html";
+    link.href = item.toLowerCase();
     link.textContent = item;
 
     li.appendChild(link);

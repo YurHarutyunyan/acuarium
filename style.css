@@ -64,7 +64,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #138496;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -14026,7 +14026,7 @@ a.text-dark:focus {
   --theme-color: #e40000;
   --primary-color: #00bbf9;
   --secondary-color: #f77f00;
-  --font-color: #707070;
+  --font-color: #b7b7b7;
   --bg-color: #fff;
   --heading-color: #060606;
   --footer-color: #f7f7f7;
@@ -14039,8 +14039,6 @@ a.text-dark:focus {
   --bg-light: #fbfbfb;
   --bg-dark-color: #fff;
   --footer-sub-color: #333;
-  /* --banner-image: url(../images/banner.png) no-repeat bottom;
-  --inner-banner: url(../images/banner.png) no-repeat; */
   --disable-color: #d8d6d6;
   --box-shadow-color: rgb(0 0 0 / 5%);
   --box-shadow-map: rgb(0 0 0 / 6%);
@@ -14075,9 +14073,7 @@ a.text-dark:focus {
   height: 100vh;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 body,
 html {
@@ -14087,6 +14083,7 @@ html {
   color: var(--font-color);
   font-family: 'Open Sans', sans-serif;
 }
+
 
 body a,
 button,
@@ -19025,13 +19022,16 @@ h4.inner-text-title {
 }
 
 #section1Div2{
-  position: relative;
+  position:static;
+  align-items: center;
   padding-left: 0px;
   padding-right: 60px;
-  text-align: top;
-  height:200px;
-  width: 300px; 
+  text-align: center;
+  height:100px;
+  width: 1300px; 
   color: rgb(61, 41, 5);
+  left:900px;
+  opacity:1;
 }
 
 #section2_container{
@@ -19205,10 +19205,44 @@ display: flex;
 margin: 0;
 justify-content: center;
 }
-/* .aquarium{
-  width:1200px;
-  height:500px;
+
+
+.aquarium {
+  top:200px;
+ padding:200px;
+position: relative;
+  width: 1500px;
+  height: 1100px;
+  
+ 
+background-color: #4682B4; 
+  border-radius: 450px; 
+  overflow: hidden;
+
+.aquarium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  
+ 
+transform: translateX(-50%);
+  width: 120%;
+  height: 60px;
+  
+ 
+background-color: #87CEEB;
+  
+ 
+border-radius: 50%;
 }
-.nemo-container{
-  background-color: #007bff;
-} */
+}
+.seaweed{
+  position:absolute;
+  left:250px;
+  bottom:-25px;
+  width:300px;
+}
+#sectoin1Div2{
+  position:absolute;
+}
